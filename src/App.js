@@ -8,13 +8,18 @@ import ImgCard from './components/imgCard';
 import GameOver from './components/gameover';
 
 class App extends Component {
-
   state = {
-    msg: 'Click any character to begin'
+    msg: 'Click any character to begin',
     score: 0,
-    highscore: 10,
+    highScore: 0,
     chars: chars,
-    Selected: [],
+    selected: [],
     gameover: false,
+    countdown: '',
+  }
+  shuffleChars = () => {
+    let shuffled = randomChars(chars);
+    this.setState({ chars: shuffled });
   }
 }
+export default App;
