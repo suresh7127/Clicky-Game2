@@ -6,3 +6,15 @@ import Header from './components/header';
 import Scoreboard from './components/scoreboard';
 import ImgCard from './components/imgCard';
 import GameOver from './components/gameover';
+
+class App extends Component {
+
+  state = {
+    msg: 'Click any character to begin'
+    score: 0,
+    highscore: 10,
+    chars: chars,
+    Selected: [],
+    gameover: false,
+  }
+}
