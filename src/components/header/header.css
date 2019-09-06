@@ -1,0 +1,13 @@
+.bg {
+  background: black;
+}
+
+.logo {
+  background:#fcb559;
+  font-size: 82px;
+}
+
+.desc{
+  color:white;
+  display: block;
+}
