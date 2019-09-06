@@ -1,42 +1,42 @@
 [
   {
-    "id": 1,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/bush.jpg"
+    "name": "bush",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/bush.jpg"
   },
   {
-    "id": 2,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/carter.jpg"
+    "name": "carter",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/carter.jpg"
   },
   {
-    "id": 3,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/clinton.jpg"
+    "name": "clinton",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/clinton.jpg"
   },
   {
-    "id": 4,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/donald_trump.jpeg"
+    "name": "donald",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/donald_trump.jpeg"
   },
   {
-    "id": 5,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/kennedy.jpeg"
+    "name": "kennedy",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/kennedy.jpeg"
   },
   {
-    "id": 6,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/lincoln.jpg"
+    "name": "lincoln",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/lincoln.jpg"
   },
   {
-    "id": 7,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/obama.jpg"
+    "name": "obama",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/obama.jpg"
   },
   {
-    "id": 8,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/reagan.jpg"
+    "name": "reagan",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/reagan.jpg"
   },
   {
-    "id": 9,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/roosevelt.jpg"
+    "name": "roosevelt",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/roosevelt.jpg"
   },
   {
-    "id": 10,
-    "image": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/washington.jpg"
+    "name": "washington",
+    "img_url": "https://github.com/suresh7127/Clicky-Game/blob/master/public/images/washington.jpg"
   }
 ]
