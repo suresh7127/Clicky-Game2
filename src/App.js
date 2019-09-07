@@ -78,6 +78,19 @@ class App extends Component {
     this.shuffleChars();
     console.log("You lose !!");
   };
+  reset = () => {
+    setTimeout(() => {
+      this.setState({
+        msg: 'Click any character to begin',
+        score: 0,
+        highScore: this.state.highScore,
+        selected: [],
+        gameover: false,
+        countdown: 3
+      });
+      this.shuffleChars()
+    }, 4000);
+  }
 }
 
 export default App;
