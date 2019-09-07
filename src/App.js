@@ -30,5 +30,24 @@ class App extends Component {
     let shuffled = randomChars(chars);
     this.setState({ chars: shuffled });
   }
-}
-export default App;
+  handleClick = (name) => {
+    if (!this.state.gameover) {
+      if (this.state.selected.indexOf(name) === -1) {
+        this.increment();
+        this.setState({ selected: [...this.state.selected, name] });
+      } else {
+        this.setState({ msg: 'GAME OVER', gameover: true })
+        console.log("Oops!! You Guess wrong , Game-Over");
+        this.reset();
+      } 
+      else {
+        this.setState({
+          msg: 'Click any character to begin',
+          selected: [],
+          score: 0,
+          gameover: false
+        });
+      } console.log("clicked");
+    }
+
+    export default App;
