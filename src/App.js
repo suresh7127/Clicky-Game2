@@ -39,15 +39,25 @@ class App extends Component {
         this.setState({ msg: 'GAME OVER', gameover: true })
         console.log("Oops!! You Guess wrong , Game-Over");
         this.reset();
-      } 
-      else {
-        this.setState({
-          msg: 'Click any character to begin',
-          selected: [],
-          score: 0,
-          gameover: false
-        });
-      } console.log("clicked");
-    }
+        setTimeout(() => {
+          this.setState({ countdown: 3 });
+        }, 1000)
+        setTimeout(() => {
+          this.setState({ countdown: 2 });
+        }, 2000)
+        setTimeout(() => {
+          this.setState({ countdown: 1 });
+        }, 3000)
+      }
+    } else {
+      this.setState({
+        msg: 'Click any character to begin',
+        selected: [],
+        score: 0,
+        gameover: false
+      });
+    } console.log("clicked");
+  }
+}
 
-    export default App;
+export default App;
