@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import chars from './chars.json';
 import Wrapper from './components/wrapper/wrapper';
+import Nav from './components/nav/nav';
 import Header from './components/header/header';
 import Scoreboard from './components/scoreboard/scoreboard';
 import ImgCard from './components/imgCard/imgCard';
@@ -120,6 +121,7 @@ class App extends Component {
               ))
             }
           </div>
+          <Nav />
         </Wrapper>
       )
     } else {
@@ -142,6 +144,7 @@ class App extends Component {
               reset={this.reset}
             />
           </div>
+          <Nav />
         </Wrapper>
       )
     }
