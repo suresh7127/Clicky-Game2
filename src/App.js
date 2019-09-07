@@ -58,6 +58,26 @@ class App extends Component {
       });
     } console.log("clicked");
   }
+  increment = () => {
+    const newScore = this.state.newscore + 1;
+    this.setState({
+      score: newScore,
+      msg: 'You guessed correctly!'
+    });
+    console.log("correct guess");
+    if (Score >= this.state.highScore) {
+      this.setState({ highScore: Score });
+    }
+    if (newScore === 0) {
+      this.setState({
+        msg: 'You lose!',
+        selected: [],
+        gameover: true
+      });
+    }
+    this.shuffleChars();
+    console.log("You lose !!");
+  };
 }
 
 export default App;
