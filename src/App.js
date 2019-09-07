@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import chars from './chars.json';
 import Wrapper from './components/wrapper/wrapper';
-import Nav from './components/nav/nav';
 import Header from './components/header/header';
 import Scoreboard from './components/scoreboard/scoreboard';
 import ImgCard from './components/imgCard/imgCard';
 import GameOver from './components/gameover/gameover';
+
 
 function randomChars(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -30,6 +30,7 @@ class App extends Component {
     let shuffled = randomChars(chars);
     this.setState({ chars: shuffled });
   }
+
   handleClick = (name) => {
     if (!this.state.gameover) {
       if (this.state.selected.indexOf(name) === -1) {
@@ -69,7 +70,7 @@ class App extends Component {
     if (newScore >= this.state.highScore) {
       this.setState({ highScore: newScore });
     }
-    if (newScore === 10) {
+    if (newScore === 12) {
       this.setState({
         msg: 'You win!',
         selected: [],
@@ -104,7 +105,6 @@ class App extends Component {
             score={this.state.score}
             highScore={this.state.highScore}
           />
-
           <div className="container">
             {
               this.state.chars.map(char => (
@@ -120,12 +120,12 @@ class App extends Component {
               ))
             }
           </div>
-          <Nav />
         </Wrapper>
       )
     } else {
       return (
         <Wrapper>
+
           <Header />
           <Scoreboard
             msg={this.state.msg}
@@ -142,12 +142,10 @@ class App extends Component {
               reset={this.reset}
             />
           </div>
-          <Nav />
         </Wrapper>
       )
     }
   }
 }
-
 
 export default App;

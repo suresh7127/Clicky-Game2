@@ -6,6 +6,7 @@ const ImgCard = props => (
     id={props.name}
     onClick={() => props.handleClick(props.name)}
   >
+    {console.log(props)}
     <img className="img-thumbnail" alt={props.name} src={props.img_url} />
   </div>
 );
