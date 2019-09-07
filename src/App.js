@@ -93,6 +93,58 @@ class App extends Component {
       this.shuffleChars()
     }, 4000);
   }
+  render() {
+    if (!this.state.gameover) {
+      return (
+        <Wrapper>
+          <Nav />
+          <Header />
+          <Scoreboard
+            msg={this.state.msg}
+            score={this.state.newscore}
+            highScore={this.state.newScore}
+          />
+          <div className="container">
+            {
+              this.state.chars.map(char => (
+                <ImgCard
+                  key={char.id}
+                  name={char.id}
+                  img_url={char.image}
+                  shuffleChars={this.shuffleChars}
+                  handleClick={this.handleClick}
+                  increment={this.increment}
+                  reset={this.reset}
+                />
+              ))
+            }
+          </div>
+        </Wrapper>
+      )
+    } else {
+      return (
+        <Wrapper>
+          <Nav />
+          <Header />
+          <Scoreboard
+            msg={this.state.msg}
+            score={this.state.newscore}
+            highScore={this.state.newScore}
+          />
+          <div className="container">
+            <GameOver
+              msg={this.props.msg}
+              score={this.state.newscore}
+              gameover={this.state.gameover}
+              countdown={this.state.countdown}
+              handleClick={this.handleClick}
+              reset={this.reset}
+            />
+          </div>
+        </Wrapper>
+      )
+    }
+  }
 }
 
 export default App;
