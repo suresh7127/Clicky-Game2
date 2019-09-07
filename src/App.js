@@ -93,6 +93,7 @@ class App extends Component {
       this.shuffleChars()
     }, 4000);
   }
+
   render() {
     if (!this.state.gameover) {
       return (
@@ -101,16 +102,16 @@ class App extends Component {
           <Header />
           <Scoreboard
             msg={this.state.msg}
-            score={this.state.newscore}
-            highScore={this.state.newScore}
+            score={this.state.score}
+            highScore={this.state.highScore}
           />
           <div className="container">
             {
               this.state.chars.map(char => (
                 <ImgCard
-                  key={char.id}
-                  name={char.id}
-                  img_url={char.image}
+                  key={char.name}
+                  name={char.name}
+                  img_url={char.img_url}
                   shuffleChars={this.shuffleChars}
                   handleClick={this.handleClick}
                   increment={this.increment}
@@ -128,13 +129,13 @@ class App extends Component {
           <Header />
           <Scoreboard
             msg={this.state.msg}
-            score={this.state.newscore}
-            highScore={this.state.newScore}
+            score={this.state.score}
+            highScore={this.state.highScore}
           />
           <div className="container">
             <GameOver
               msg={this.props.msg}
-              score={this.state.newscore}
+              score={this.state.score}
               gameover={this.state.gameover}
               countdown={this.state.countdown}
               handleClick={this.handleClick}
@@ -146,5 +147,6 @@ class App extends Component {
     }
   }
 }
+
 
 export default App;

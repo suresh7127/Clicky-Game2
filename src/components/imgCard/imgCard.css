@@ -1,5 +1,5 @@
 .img-thumbnail {
-  float: left;
+   float: left; 
   width: 25%;
-  height: 192px;
+  height: 150px;
 }
