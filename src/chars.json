@@ -1,42 +1,42 @@
 [
   {
     "name": "bush",
-    "img_url": "http://www.gstatic.com/tv/thumb/persons/514222/514222_v9_bb.jpg"
+    "img_url": "http://www.gstatic.com/tv/thumb/persons/168360/168360_v9_ba.jpg"
   },
   {
     "name": "carter",
-    "img_url": "../../images/carter.jpg"
+    "img_url": "https://www.potus.com/wp-content/uploads/39_jimmy_carter_5_gallery.jpg"
   },
   {
     "name": "clinton",
-    "img_url": "./public/images/clinton.jpg"
+    "img_url": "http://www.gstatic.com/tv/thumb/persons/335/335_v9_bb.jpg"
   },
   {
     "name": "donald",
-    "img_url": "./public/images/donald_trump.jpeg"
+    "img_url": "https://live.staticflickr.com/8511/8470663773_c006416fac_b.jpg"
   },
   {
     "name": "kennedy",
-    "img_url": "./public/images/kennedy.jpeg"
+    "img_url": "https://www.onthisday.com/images/people/john-f-kennedy-medium.jpg"
   },
   {
     "name": "lincoln",
-    "img_url": "./public/images/lincoln.jpg"
+    "img_url": "https://www.biography.com/.image/t_share/MTIwNjA4NjMzODg2NTc0MDky/abraham-lincoln-9382540-2-402.jpg"
   },
   {
     "name": "obama",
-    "img_url": "./public/images/obama.jpg"
+    "img_url": "http://www.gstatic.com/tv/thumb/persons/514222/514222_v9_bb.jpg"
   },
   {
     "name": "reagan",
-    "img_url": "./public/images/reagan.jpg"
+    "img_url": "http://www.gstatic.com/tv/thumb/persons/56513/56513_v9_ba.jpg"
   },
   {
     "name": "roosevelt",
-    "img_url": "./public/images/roosevelt.jpg"
+    "img_url": "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzcxODU2Mzk3/franklin-roosevelt-9463381-1-raw.jpg"
   },
   {
     "name": "washington",
-    "img_url": "./public/images/washington.jpg"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/George_Washington_1795.jpg/220px-George_Washington_1795.jpg"
   }
 ]
