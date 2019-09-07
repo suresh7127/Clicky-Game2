@@ -98,13 +98,13 @@ class App extends Component {
     if (!this.state.gameover) {
       return (
         <Wrapper>
-          <Nav />
           <Header />
           <Scoreboard
             msg={this.state.msg}
             score={this.state.score}
             highScore={this.state.highScore}
           />
+
           <div className="container">
             {
               this.state.chars.map(char => (
@@ -120,12 +120,12 @@ class App extends Component {
               ))
             }
           </div>
+          <Nav />
         </Wrapper>
       )
     } else {
       return (
         <Wrapper>
-          <Nav />
           <Header />
           <Scoreboard
             msg={this.state.msg}
@@ -142,6 +142,7 @@ class App extends Component {
               reset={this.reset}
             />
           </div>
+          <Nav />
         </Wrapper>
       )
     }
