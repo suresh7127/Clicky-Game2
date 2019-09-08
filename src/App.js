@@ -71,7 +71,7 @@ class App extends Component {
     if (newScore >= this.state.highScore) {
       this.setState({ highScore: newScore });
     }
-    if (newScore === 12) {
+    if (newScore === 10) {
       this.setState({
         msg: 'You win!',
         selected: [],
