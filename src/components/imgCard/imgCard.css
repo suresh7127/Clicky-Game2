@@ -2,4 +2,6 @@
   float: left;
   width: 250px;
   height: 250px;
+  border: 2px solid rebeccapurple;
+  margin: 4px 4px 4px 4px;
 }
