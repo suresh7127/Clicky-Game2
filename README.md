@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <h2>Overview</h2>
 <ul>
-  <li>The gameclicky is a web game application where users click images  in order to earn points.  You win the game whenever you have clicked .  
+  <li>The gameclicky is a web game application where users click images  in order to earn points.  User will win the game if they score highest point .  
 <h2>Technologies Used:</h2>
 <ul>
   <li>React.js- UI</li>
@@ -14,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <h2>About the Code</h2>
 <h4>Getting Started</h4>
-<p>First thing I did was create the React Client-side boilerplate by typing create-react-app Clicky-game in the command line.  Next, I changed into that directory by typing 'cd Clicky-game' in the terminal. After that I typed npm start to open the app in the browser.</p>
+<p>First thing I did was create the React Client-side boilerplate by typing create-react-app Clicky Game2 in the command line.  Next, I changed into that directory by typing 'cd Clicky Game2' in the terminal. After that I typed npm start to open the app in the browser.</p>
 <h4>Starting to Code</h4>
 <p>Create-react-app gives you a public folder with a basic index.html page, some basic css for the react template, an App.js file, index.js file, and some other boilerplate files.  I only had to alter one things in the index.html page: the title of my app. I either altered or completely changed the rest of the files, adding my own style.  The bulk of the code for this app was done in the src/components directory. </p>
 
